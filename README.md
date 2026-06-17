@@ -104,24 +104,25 @@ Asegúrate de tener instalado Python (versión 3.8 o superior) y acceso a una te
 ### Paso a Paso
 
 1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/tu-usuario/Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica.git](https://github.com/tu-usuario/Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica.git)
-   cd Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica
-   ```
+```bash
+git clone https://github.com/tu-usuario/Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica.git
+cd Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica
+```
 2. **Instalar las dependencias requeridas:**
 Instala las librerías necesarias para el procesamiento de datos y cálculo científico ejecutando:
 ```bash
-pip install pandas numpy scipy jupyter
+pip install pandas numpy scipy jupyter openpyxl
 ```
 
 3. **Ejecutar el Análisis Estadístico:**
 Para abrir el entorno interactivo y revisar las pruebas de hipótesis (ANOVA y Chi-cuadrado), ejecuta:
 ```bash
-jupyter notebook notebooks/
+jupyter notebook notebooks/pipeline_analisis_clinico.ipynb
 ```
+Si prefieres usar JupyterLab o la extensión de VS Code, simplemente abre el archivo directamente desde tu editor de preferencia.
 
 4. **Explorar la Base de Datos:**
-La base de datos relacional ya se encuentra compilada en la carpeta /data/ensayo_clinico.db. Puedes conectarte a ella utilizando cualquier lector de SQLite (como DB Browser for SQLite) para probar las consultas directamente.
+La base de datos relacional ya se encuentra compilada y lista en la ruta data/ensayo_clinico.db. Puedes conectarte a ella mediante código utilizando la librería nativa sqlite3 de Python, o de forma visual utilizando cualquier suite de gestión de bases de datos (como DB Browser for SQLite o DBeaver) para probar tus propias consultas SQL.
 
 ## Entregable Final
 
