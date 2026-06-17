@@ -88,13 +88,10 @@ El proyecto está organizado de manera modular para garantizar la escalabilidad,
 
 ```text
 ├── data/
-│   └── ensayo_clinico.db         # Base de datos relacional en formato SQLite
+│   └── ensayo_clinico.db                # Base de datos relacional en formato SQLite
 ├── notebooks/
-│   └── analisis_estadistico.ipynb # EDA, limpieza con Pandas y pruebas de SciPy
-├── sql/
-│   ├── schema.sql                # Creación de tablas y restricciones de integridad
-│   └── queries_extraccion.sql    # Consultas avanzadas y preparación del flat table
-└── README.md                     # Documentación principal del proyecto
+│   └── pipeline_analisis_clinico.ipynb  #Jupyter Notebook principal que contiene el flujo completo (Ingeniería de   │                                         características con SQL, manipulación de datos con Pandas y modelado       │                                         estadístico con SciPy).
+└── README.md                            # Documentación principal del proyecto
 ```
 
 ## Cómo Ejecutar el Proyecto
