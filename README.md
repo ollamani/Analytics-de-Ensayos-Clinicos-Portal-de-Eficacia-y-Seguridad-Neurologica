@@ -1,1 +1,1 @@
-# Analytics-de-Ensayos-Cl-nicos-Portal-de-Eficacia-y-Seguridad-Neurol-gica
+# Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica
