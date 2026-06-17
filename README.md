@@ -2,7 +2,7 @@
 
 Este proyecto implementa un pipeline de datos de extremo a extremo (End-to-End) para evaluar la eficacia y el perfil de seguridad de un fármaco neurológico en una cohorte simulada de **1,000 pacientes** a lo largo de **4 visitas cronológicas**. 
 
-[**Link al Dashboard Interactivo:***]
+[**Link al Dashboard Interactivo:**]
 (https://public.tableau.com/app/profile/isa.v.zquez.garc.a/viz/PortaldeAnlisisdeEficaciaySeguridadenEnsayosClnicos_/Historia1)
 
 ---
