@@ -127,14 +127,14 @@ jupyter notebook notebooks/
 4. **Explorar la Base de Datos:**
 La base de datos relacional ya se encuentra compilada en la carpeta /data/ensayo_clinico.db. Puedes conectarte a ella utilizando cualquier lector de SQLite (como DB Browser for SQLite) para probar las consultas directamente.
 
-## 🔗 Entregable Final
+## Entregable Final
 
-> 📊 **Acceso al Portal Interactivo:**
+> **Acceso al Portal Interactivo:**
 > El resultado de todo este pipeline de datos y la capa de *data storytelling* ejecutiva está publicado y disponible para su exploración pública en el siguiente enlace:
 > 
 > [**Ver Caso de Estudio Completo en Tableau Public**](https://public.tableau.com/app/profile/isa.v.zquez.garc.a/viz/PortaldeAnlisisdeEficaciaySeguridadenEnsayosClnicos_/Historia1)
 
-### 🎯 ¿Qué encontrará en este entregable?
+### ¿Qué encontrará en este entregable?
 Al interactuar con la **Historia de Tableau**, podrá explorar de manera interactiva:
 1. **Línea Narrativa Guiada:** Un recorrido paso a paso diseñado para *stakeholders* que conecta la escala de la cohorte con los hallazgos críticos de negocio.
 2. **Interactividad (UX/UI):** Implementación de *Viz-in-Tooltip* que permite auditar los efectos secundarios específicos (cefalea e insomnio) en tiempo real al posar el cursor sobre los puntos críticos de la línea temporal.
