@@ -85,10 +85,57 @@ print(f"Chi-cuadrado Deserción - p-valor: {p_val_chi2:.4f}")
 ```
 ## Estructura del Repositorio
 
-Para explorar los scripts completos y las consultas de base de datos detalladas, el proyecto está organizado de la siguiente manera:
+El proyecto está organizado de manera modular para garantizar la escalabilidad, separando la gestión de la base de datos, el procesamiento estadístico y las consultas de extracción:
 
-/sql/: Contiene los scripts de creación de tablas (schema.sql) y las consultas analíticas de extracción.
+```text
+├── data/
+│   └── ensayo_clinico.db         # Base de datos relacional en formato SQLite
+├── notebooks/
+│   └── analisis_estadistico.ipynb # EDA, limpieza con Pandas y pruebas de SciPy
+├── sql/
+│   ├── schema.sql                # Creación de tablas y restricciones de integridad
+│   └── queries_extraccion.sql    # Consultas avanzadas y preparación del flat table
+└── README.md                     # Documentación principal del proyecto
+```
 
-/notebooks/: Contiene el Jupyter Notebook con el análisis exploratorio de datos (EDA), la limpieza con Pandas y las pruebas completas de SciPy.
+## Cómo Ejecutar el Proyecto
 
-/data/: Base de datos relacional en formato SQLite (ensayo_clinico.db).
+Para replicar este pipeline de datos, ejecutar los análisis estadísticos o explorar el modelo de la base de datos localmente, sigue estas instrucciones:
+
+### Prerrequisitos
+Asegúrate de tener instalado Python (versión 3.8 o superior) y acceso a una terminal de comandos.
+
+### Paso a Paso
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica.git](https://github.com/tu-usuario/Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica.git)
+   cd Analytics-de-Ensayos-Clinicos-Portal-de-Eficacia-y-Seguridad-Neurologica
+   ```
+2. **Instalar las dependencias requeridas:**
+Instala las librerías necesarias para el procesamiento de datos y cálculo científico ejecutando:
+```bash
+pip install pandas numpy scipy jupyter
+```
+
+3. **Ejecutar el Análisis Estadístico:**
+Para abrir el entorno interactivo y revisar las pruebas de hipótesis (ANOVA y Chi-cuadrado), ejecuta:
+```bash
+jupyter notebook notebooks/
+```
+
+4. **Explorar la Base de Datos:**
+La base de datos relacional ya se encuentra compilada en la carpeta /data/ensayo_clinico.db. Puedes conectarte a ella utilizando cualquier lector de SQLite (como DB Browser for SQLite) para probar las consultas directamente.
+
+## 🔗 Entregable Final
+
+> 📊 **Acceso al Portal Interactivo:**
+> El resultado de todo este pipeline de datos y la capa de *data storytelling* ejecutiva está publicado y disponible para su exploración pública en el siguiente enlace:
+> 
+> [**Ver Caso de Estudio Completo en Tableau Public**](https://public.tableau.com/app/profile/isa.v.zquez.garc.a/viz/PortaldeAnlisisdeEficaciaySeguridadenEnsayosClnicos_/Historia1)
+
+### 🎯 ¿Qué encontrará en este entregable?
+Al interactuar con la **Historia de Tableau**, podrá explorar de manera interactiva:
+1. **Línea Narrativa Guiada:** Un recorrido paso a paso diseñado para *stakeholders* que conecta la escala de la cohorte con los hallazgos críticos de negocio.
+2. **Interactividad (UX/UI):** Implementación de *Viz-in-Tooltip* que permite auditar los efectos secundarios específicos (cefalea e insomnio) en tiempo real al posar el cursor sobre los puntos críticos de la línea temporal.
+3. **Validación Visible:** Integración explícita de las conclusiones de las pruebas ANOVA y Chi-cuadrado para dar certeza estadística a cada gráfico.
