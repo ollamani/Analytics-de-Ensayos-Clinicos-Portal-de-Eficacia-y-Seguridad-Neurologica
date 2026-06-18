@@ -11,7 +11,7 @@ Este proyecto implementa un pipeline de datos de extremo a extremo (End-to-End) 
 El proyecto se divide en tres capas de desarrollo:
 1. **Almacenamiento (SQL):** Estructuración y persistencia de los datos clínicos mediante SQLite.
 2. **Procesamiento y Validación Estadística (Python):** Limpieza, agregación y ejecución de pruebas de hipótesis analíticas (`SciPy`, `Pandas`).
-3. **Visualización (Tableau):** Capa ejecutiva con arquitectura *Viz-in-Tooltip* e Historias narrativas.
+3. **Visualización (Tableau):** Capa con arquitectura *Viz-in-Tooltip* e Historias narrativas.
 
 ---
 
